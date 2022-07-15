@@ -1,4 +1,4 @@
-package com.example.happybirthday
+package com.example.happybirthday.unit1
 
 class Dice(private val numSides: Int) {
     fun roll(): Int {

@@ -1,5 +1,6 @@
 package com.example.happybirthday
 
+import com.example.happybirthday.unit1.Dice
 import junit.framework.Assert.assertTrue
 import org.junit.Test
 
