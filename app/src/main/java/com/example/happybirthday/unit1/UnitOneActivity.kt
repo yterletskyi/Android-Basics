@@ -35,7 +35,10 @@ class UnitOneActivity : AppCompatActivity() {
         }
 
         imageView.setImageResource(drawableResource)
-        textView.setText(R.string.signature_text + diceRoll)
+        textView.setText(R.string.signature_text)
+        var text: String = textView.text.toString()
+        text = "$text $diceRoll"
+        textView.text = text
         imageView.contentDescription = diceRoll.toString()
     }
 }
