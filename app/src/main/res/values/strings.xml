@@ -3,4 +3,12 @@
     <string name="header_name">Get random number</string>
     <string name="signature_text">Your number</string>
     <string name="button_text">Roll</string>
+    <string name="cost_of_service">Cost of service</string>
+    <string name="service_question">How was the service</string>
+    <string name="option1">Amazing (20%)</string>
+    <string name="option2">Good (18%)</string>
+    <string name="option3">OK (15%)</string>
+    <string name="round_switch">Round up tip?</string>
+    <string name="calculate_tips">Calculate</string>
+    <string name="tips_result">Tips Amount %s</string>
 </resources>
