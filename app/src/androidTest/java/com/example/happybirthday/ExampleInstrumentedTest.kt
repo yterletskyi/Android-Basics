@@ -40,4 +40,30 @@ class ExampleInstrumentedTest {
         onView(withId(R.id.tips_result))
             .check(matches(withText(containsString("$10.00"))))
     }
+
+    @Test
+    fun calculate_18_percent_tip() {
+        onView(withId(R.id.cost_of_service))
+            .perform(typeText("50.00"))
+            .perform(ViewActions.closeSoftKeyboard())
+
+        onView(withId(R.id.calculate_tips))
+            .perform(click())
+
+        onView(withId(R.id.tips_result))
+            .check(matches(withText(containsString("$9.00"))))
+    }
+
+    @Test
+    fun calculate_15_percent_tip() {
+        onView(withId(R.id.cost_of_service))
+            .perform(typeText("50.00"))
+            .perform(ViewActions.closeSoftKeyboard())
+
+        onView(withId(R.id.calculate_tips))
+            .perform(click())
+
+        onView(withId(R.id.tips_result))
+            .check(matches(withText(containsString("$7.50"))))
+    }
 }
