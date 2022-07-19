@@ -25,7 +25,8 @@ class UnitTwoActivity : AppCompatActivity() {
         val tipsPercentage = when (binding.tipsOptions.checkedRadioButtonId) {
             R.id.twenty_percent_option -> 0.20
             R.id.eighteen_percent_option -> 0.18
-            else -> 0.15
+            R.id.fifteen_percent_option -> 0.15
+            else -> throw IllegalArgumentException("unsupported id : ${binding.tipsOptions.checkedRadioButtonId}")
         }
         if (cost == null) {
             binding.tipsResult.text = ""

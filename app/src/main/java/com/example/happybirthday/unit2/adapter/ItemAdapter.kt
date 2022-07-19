@@ -27,11 +27,10 @@ class ItemAdapter(private val context: Context, private val dataset: List<Affirm
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-        holder.textView.text = context.resources.getString(item.stringResourceId)
+        holder.textView.text = context.getString(item.stringResourceId)
         holder.imageView.setImageResource(item.imageResourceId)
     }
 
-    override fun getItemCount(): Int {
-        return dataset.size
-    }
+    override fun getItemCount() = dataset.size
+
 }
