@@ -6,11 +6,12 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.happybirthday.R
+import java.text.NumberFormat
 
 class UnitOneActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main2)
 
         val rollButton: Button = findViewById(R.id.button)
         rollButton.setOnClickListener { rollDice() }
@@ -35,10 +36,8 @@ class UnitOneActivity : AppCompatActivity() {
         }
 
         imageView.setImageResource(drawableResource)
-        textView.setText(R.string.signature_text)
-        var text: String = textView.text.toString()
-        text = "$text $diceRoll"
-        textView.text = text
         imageView.contentDescription = diceRoll.toString()
+        val formattedNumber = NumberFormat.getNumberInstance().format(diceRoll)
+        textView.text = getString(R.string.signature_text, formattedNumber)
     }
 }
