@@ -38,6 +38,6 @@ class UnitOneActivity : AppCompatActivity() {
         imageView.setImageResource(drawableResource)
         imageView.contentDescription = diceRoll.toString()
         val formattedNumber = NumberFormat.getNumberInstance().format(diceRoll)
-        textView.text = getString(R.string.tips_result, formattedNumber)
+        textView.text = getString(R.string.signature_text, formattedNumber)
     }
 }
