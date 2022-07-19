@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">My Test Application</string>
     <string name="header_name">Get random number</string>
-    <string name="signature_text">Your number</string>
+    <string name="signature_text">Your number %s</string>
     <string name="button_text">Roll</string>
     <string name="cost_of_service">Cost of service</string>
     <string name="service_question">How was the service</string>
