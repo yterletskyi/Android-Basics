@@ -4,16 +4,16 @@ package com.example.happybirthday.unit2
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.happybirthday.R
-import com.example.happybirthday.databinding.ActivityMainBinding
+import com.example.happybirthday.databinding.ActivityMain5Binding
 import java.text.NumberFormat
 
 class UnitTwoActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityMainBinding
+    lateinit var binding: ActivityMain5Binding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMain5Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.calculateTips.setOnClickListener { calculateTip() }
