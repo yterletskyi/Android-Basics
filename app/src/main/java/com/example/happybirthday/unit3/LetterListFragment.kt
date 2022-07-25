@@ -62,8 +62,7 @@ class LetterListFragment : Fragment() {
     }
 
     private fun setIcon(menuItem: MenuItem?) {
-        if (menuItem == null)
-            return
+        menuItem ?: return
 
         menuItem.icon =
             if (isLinearLayoutManager)
@@ -78,7 +77,7 @@ class LetterListFragment : Fragment() {
                 chooseLayout()
                 setIcon(item)
 
-                return true
+                true
             }
 
             else -> super.onOptionsItemSelected(item)
